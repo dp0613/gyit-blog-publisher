@@ -1,0 +1,17 @@
+/*Login page*/
+.login-form {
+  padding: 32px; }
+
+.title {
+  font-size: 28px;
+  margin-bottom: 10px; }
+
+.login-input-line {
+  margin-bottom: 16px; }
+
+/*Publisher page*/
+.space-right {
+  padding: 0 10px; }
+
+.top-bar, .new-form {
+  padding: 32px; }

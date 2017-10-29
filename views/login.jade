@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title Login Page
+    meta(charset="utf-8")
+    link(rel="stylesheet", href="/css/bootstrap.min.css")
+    link(rel="stylesheet", href="/css/style.css")
+  body.bg-light
+    div.container-fluid
+      div.row
+        div.col-4
+        div.col-4
+          div.error= error
+          div.login-form
+            div.title Login
+            form(method="post", action="/login")
+              div.input-group.login-input-line
+                span.input-group-addon @
+                input.form-control(type="text", name="username", placeholder="Username")
+              div.input-group.login-input-line
+                span.input-group-addon $
+                input.form-control(type="password", name="password", placeholder="Password")
+              button.btn.btn-primary Login Now
+        div.col-4
+    script(src="https://code.jquery.com/jquery-3.2.1.min.js")
+    script(src="/js/bootstrap.min.js")

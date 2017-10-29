@@ -1,0 +1,28 @@
+{
+  "name": "gyit-blog-publisher",
+  "version": "0.0.1",
+  "description": "The tool used to post new article into GYIT blog",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dp0613/gyit-blog-publisher.git"
+  },
+  "author": "dp0613",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dp0613/gyit-blog-publisher/issues"
+  },
+  "homepage": "https://github.com/dp0613/gyit-blog-publisher#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "jade": "^1.11.0",
+    "node-sass-middleware": "^0.11.0",
+    "pg": "^7.3.0",
+    "request": "^2.83.0"
+  }
+}

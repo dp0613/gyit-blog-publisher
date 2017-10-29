@@ -1,0 +1,44 @@
+doctype html
+html
+  head
+    title Publisher Page
+    meta(charset="utf-8")
+    link(rel="stylesheet", href="/css/bootstrap.min.css")
+    link(rel="stylesheet", href="/css/style.css")
+    script(src="/tinymce/tinymce.min.js")
+  body.bg-light
+    div.container-fluid
+      div.row.top-bar.bg-info.text-light
+        div.col-4 GYIT Blog Publisher
+        div.col-4
+        div.col-4
+            span.hello.space-right Logged as
+              span.username.space-right.font-weight-bold #{username} -
+            span.space-right.logout
+              a.text-light(href="/logout") Logout
+      div.row
+        div.col-3
+        div.col-6.new-form
+          form.add-new-form(method="post", action="/new")
+            div.form-group
+              label(for="post_title") New post title:
+              input.form-control#post_title(type="text", name="post_title")
+              small.form-text.text-danger= title_error
+            div.form-group
+              label(for="post_category") Category:
+              select.form-control#post_category(name="post_category")
+                option.form-control(value="") Choose category...
+                option.form-control(value="1") Thông báo
+                option.form-control(value="2") Hoạt động
+                option.form-control(value="3") Tuyển dụng
+              small.form-text.text-danger= category_error
+            div.form-group
+              label(for="post_contents") Contents:
+              textarea.form-control.editor#post_contents(name="post_contents")
+              small.form-text.text-danger= contents_error
+            button.btn.btn-primary.add-new-btn Publish
+        div.col-3
+    script(src="https://code.jquery.com/jquery-3.2.1.min.js")
+    script(src="/js/main.js")
+  div.row
+    div.col-12.text-center &copy 2017 - dp0613@gyit.org

@@ -1,0 +1,26 @@
+$font-size-normal: 16px;
+$font-size-big: 28px;
+$container-padding: 32px;
+
+/*Login page*/
+.login-form {
+  padding: $container-padding;
+}
+
+.title {
+  font-size: $font-size-big;
+  margin-bottom: 10px;
+}
+
+.login-input-line {
+  margin-bottom: 16px;
+}
+
+/*Publisher page*/
+.space-right {
+  padding: 0 10px;
+}
+
+.top-bar, .new-form {
+  padding: $container-padding;
+}
